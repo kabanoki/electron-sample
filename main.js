@@ -1,3 +1,4 @@
+//Main Proccess
 const { app, BrowserWindow, ipcMain, Notification } = require('electron');
 const path = require('path');
 const isDev = !app.isPackaged
@@ -46,3 +47,4 @@ app.on('activate', () => {
     if(BrowserWindow.getAllWindows().length === 0){
         createWindow();
     }
+})
